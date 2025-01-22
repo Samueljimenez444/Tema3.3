@@ -6,7 +6,8 @@ import java.util.TreeSet;
 public class Ejercicio6 {
 
 	public static void main(String[] args) {
-		// Creamos un TreeSet de tipo cadena que guardara los distintos nombres y los ordenara en orden alfabetico
+		// Creamos un TreeSet de tipo cadena que guardara los distintos nombres y los
+		// ordenara en orden alfabetico
 		// que introduzcamos
 		TreeSet<String> listaNombre = new TreeSet<String>();
 		// Creamos la variable booleana fin que inicializara en false
@@ -32,7 +33,7 @@ public class Ejercicio6 {
 				// Se añade a la coleccion lo introducido por consola
 				listaNombre.add(nombre);
 			}
-			
+
 		}
 		// Print fin programa
 		System.out.println("Fin del Programa");

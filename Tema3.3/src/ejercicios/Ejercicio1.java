@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Ejercicio1 {
 
 	public static void main(String[] args) {
-		//Creamos una lista entera de numeros que iremos almacenando
+		// Creamos una lista entera de numeros que iremos almacenando
 		ArrayList<Integer> listaNumeros = new ArrayList<Integer>();
 		boolean negativo = false;
 		Scanner lectura = new Scanner(System.in);
