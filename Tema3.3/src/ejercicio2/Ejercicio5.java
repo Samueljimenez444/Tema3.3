@@ -48,41 +48,42 @@ public class Ejercicio5 {
 				serie = lectura.nextLine();
 				System.out.println("Introduce tu valoracion de la serie");
 				valoracion = lectura.nextLine();
-				//Se introducen los valores en el diccionario
+				// Se introducen los valores en el diccionario
 				listaSeries.put(serie, valoracion);
-				//Si el usuario elige 2
+				// Si el usuario elige 2
 			} else if (eleccion == 2) {
-				/*Se le pide al usuario que introduzca el nombre de una serie*/
+				/* Se le pide al usuario que introduzca el nombre de una serie */
 				System.out.println("Introduzca la serie que quieres buscar");
 				serie = lectura.nextLine();
-				//Se iguala el booleano correspondiente al metodo contains de la clase mapas a la variable encontrado
+				// Se iguala el booleano correspondiente al metodo contains de la clase mapas a
+				// la variable encontrado
 				encontrado = listaSeries.containsKey(serie);
-				//Si encontrado es true
+				// Si encontrado es true
 				if (encontrado == true) {
-					//Se le comenta al usuario que la serie ha sido encontrada en el sistema
+					// Se le comenta al usuario que la serie ha sido encontrada en el sistema
 					System.out.println("La serie se ha encontrado en el sistema");
-					//Si no se le comenta que la serie no ha sido encontrada en el sistema
+					// Si no se le comenta que la serie no ha sido encontrada en el sistema
 				} else {
 					System.out.println("La serie no se ha encontrado en el sistema");
 				}
-				//Si el usuario elige 3
+				// Si el usuario elige 3
 			} else if (eleccion == 3) {
-				//Se le pide una serie al usuario
+				// Se le pide una serie al usuario
 				System.out.println("Introduzca la serie que quieres eliminar");
-				//El valor de serie depende del input del usuario
+				// El valor de serie depende del input del usuario
 				serie = lectura.nextLine();
-				//Se elimina la serie del diccionario
+				// Se elimina la serie del diccionario
 				listaSeries.remove(serie);
-				//Si el usuario elige 4
+				// Si el usuario elige 4
 			} else if (eleccion == 4) {
-				//Salir sera verdadero y el programa terminara
+				// Salir sera verdadero y el programa terminara
 				salir = true;
-				//Si el usuario no elige una opcion valida se le mostrara por pantalla
+				// Si el usuario no elige una opcion valida se le mostrara por pantalla
 			} else {
 				System.out.println("Elige una opcion valida");
 			}
 		}
-		//Print fin del programa
+		// Print fin del programa
 		System.out.println("Fin del Programa");
 		// Cierre Scanner
 		lectura.close();
